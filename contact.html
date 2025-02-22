@@ -9,40 +9,31 @@
     <script defer src="script.js"></script>
 </head>
 <body>
- <!-- Header Section -->
+  <!-- Header Section -->
   <header>
     <div class="logo-container">
-      <img src="logo.png" alt="Mercylife Hospital Logo" class="logo">
+      <!-- Hospital Logo -->
+      <img src="images/logo.png" alt="Mercylife Hospital Logo" class="logo">
+      <!-- Hospital Name -->
       <h1 class="hospital-name">Mercylite Hospital Limited</h1>
     </div>
 
-     <!-- Hamburger Menu for Small Screens -->
-    <button class="hamburger-menu" id="hamburger-menu">
-      &#9776;
-    </button>
-
-    <!-- Desktop Navigation Menu -->
+    <!-- Quick Links Below the Logo and Hospital Name -->
     <nav class="main-nav" id="main-nav">
       <ul class="main-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Appointments</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="appointment.html">Appointments</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
-    <!-- Off-Canvas Menu (for Mobile) -->
-    <div class="off-canvas-menu" id="off-canvas-menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Appointments</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Search..." />
+      <button type="button" id="search-button">Search</button>
     </div>
-
   </header>
 
 
