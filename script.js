@@ -95,3 +95,14 @@ function toggleDescription(button) {
         button.textContent = "Read More"; // Change button text back
     }
 }
+
+
+// script.js
+document.getElementById('search-button').addEventListener('click', function() {
+    const searchQuery = document.getElementById('search-bar').value;
+    if (searchQuery) {
+        alert('You searched for: ' + searchQuery);
+    } else {
+        alert('Please enter a search term.');
+    }
+});
