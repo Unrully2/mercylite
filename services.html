@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mercylite Hospital Limited - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+ <!-- Header Section -->
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Mercylife Hospital Logo" class="logo">
+      <h1 class="hospital-name">Mercylite Hospital Limited</h1>
+    </div>
+
+     <!-- Hamburger Menu for Small Screens -->
+    <button class="hamburger-menu" id="hamburger-menu">
+      &#9776;
+    </button>
+
+    <!-- Desktop Navigation Menu -->
+    <nav class="main-nav" id="main-nav">
+      <ul class="main-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Appointments</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Off-Canvas Menu (for Mobile) -->
+    <div class="off-canvas-menu" id="off-canvas-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Appointments</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+
+<head>
+  <!-- Example Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<!-- Add this link to include Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<div class="hero-section">
+  <div class="hero-background"></div>
+  <div class="hero-content">
+    
+  </div>
+</div>
+
+<div class="container">
+  <div class="box">
+    Out Patient Services
+  </div>
+</div>
+<div class="service-container">
+    <!-- Trauma & Emergency -->
+    <div class="service-card">
+        <div class="service-label">Outpatient Services</div>
+        <img src="triage.jpg" alt="Trauma & Emergency" class="service-img">
+        <h2>Trauma & Emergency</h2>
+        <p id="service-summary-1">We provide immediate care for injuries and emergencies. Our team is always ready to help.</p>
+        <button onclick="showMore('service-details-1')">Read More</button>
+        <div id="service-details-1" class="service-details" style="display: none;">
+            <ul>
+                <li>Accident & Injury Care</li>
+                <li>Emergency Surgery</li>
+                <li>Burn Care</li>
+            </ul>
+            <button onclick="hideDetails('service-details-1')">Show Less</button>
+        </div>
+    </div>
+
+    <!-- Consultation -->
+    <div class="service-card">
+        <div class="service-label">Outpatient Services</div>
+        <img src="consultation.jpg" alt="Consultation" class="service-img">
+        <h2>Consultation</h2>
+        <p id="service-summary-2">Our doctors offer expert consultation for a wide range of health concerns.</p>
+        <button onclick="showMore('service-details-2')">Read More</button>
+        <div id="service-details-2" class="service-details" style="display: none;">
+            <ul>
+                <li>General Health Check-ups</li>
+                <li>Specialist Consultations</li>
+                <li>Second Opinions</li>
+            </ul>
+            <button onclick="hideDetails('service-details-2')">Show Less</button>
+        </div>
+    </div>
+
+    <!-- Laboratory -->
+    <div class="service-card">
+        <div class="service-label">Outpatient Services</div>
+        <img src="laboratory.jpg" alt="Laboratory" class="service-img">
+        <h2>Laboratory</h2>
+        <p id="service-summary-3">We offer a variety of diagnostic lab tests with fast results.</p>
+        <button onclick="showMore('service-details-3')">Read More</button>
+        <div id="service-details-3" class="service-details" style="display: none;">
+            <ul>
+                <li>Blood Tests</li>
+                <li>Urine Analysis</li>
+                <li>X-Ray & Imaging</li>
+            </ul>
+            <button onclick="hideDetails('service-details-3')">Show Less</button>
+        </div>
+    </div>
+
+    <!-- Pharmacy -->
+    <div class="service-card">
+        <div class="service-label">Outpatient Services</div>
+        <img src="pharmacy.jpg" alt="Pharmacy" class="service-img">
+        <h2>Pharmacy</h2>
+        <p id="service-summary-4">Our pharmacy provides prescription medications and over-the-counter solutions.</p>
+        <button onclick="showMore('service-details-4')">Read More</button>
+        <div id="service-details-4" class="service-details" style="display: none;">
+            <ul>
+                <li>Prescription Fulfillment</li>
+                <li>Over-the-Counter Medications</li>
+                <li>Health Supplements</li>
+            </ul>
+            <button onclick="hideDetails('service-details-4')">Show Less</button>
+        </div>
+    </div>
+
+    <!-- Dental -->
+    <div class="service-card">
+        <div class="service-label">Outpatient Services</div>
+        <img src="dental.jpg" alt="Dental" class="service-img">
+        <h2>Dental</h2>
+        <p id="service-summary-5">Comprehensive dental care, from routine checkups to complex procedures.</p>
+        <button onclick="showMore('service-details-5')">Read More</button>
+        <div id="service-details-5" class="service-details" style="display: none;">
+            <ul>
+                <li>Routine Cleanings</li>
+                <li>Fillings and Restorations</li>
+                <li>Orthodontics</li>
+                <li>Root Canals</li>
+            </ul>
+            <button onclick="hideDetails('service-details-5')">Show Less</button>
+        </div>
+    </div>
+
+    <!-- Optical -->
+    <div class="service-card">
+        <div class="service-label">Outpatient Services</div>
+        <img src="optical.jpg" alt="Optical" class="service-img">
+        <h2>Optical</h2>
+        <p id="service-summary-6">Expert eye care services, including glasses, contacts, and exams.</p>
+        <button onclick="showMore('service-details-6')">Read More</button>
+        <div id="service-details-6" class="service-details" style="display: none;">
+            <ul>
+                <li>Eye Exams</li>
+                <li>Prescription Glasses</li>
+                <li>Contact Lenses</li>
+            </ul>
+            <button onclick="hideDetails('service-details-6')">Show Less</button>
+        </div>
+    </div>
+
+    <!-- Diagnostic and Imaging -->
+    <div class="service-card">
+        <div class="service-label">Outpatient Services</div>
+        <img src="diagnostics.jpg" alt="Diagnostic & Imaging" class="service-img">
+        <h2>Diagnostic & Imaging</h2>
+        <p id="service-summary-7">State-of-the-art imaging for accurate diagnostics, including MRI, X-rays, and more.</p>
+        <button onclick="showMore('service-details-7')">Read More</button>
+        <div id="service-details-7" class="service-details" style="display: none;">
+            <ul>
+                <li>CT Scan</li>
+                <li>MRI</li>
+                <li>Ultrasound</li>
+            </ul>
+            <button onclick="hideDetails('service-details-7')">Show Less</button>
+        </div>
+    </div>
+
+    <!-- Ambulance -->
+    <div class="service-card">
+        <div class="service-label">Emergency Services</div>
+        <img src="ambulance.jpg" alt="Ambulance" class="service-img">
+        <h2>Ambulance</h2>
+        <p id="service-summary-8">Emergency ambulance services available 24/7.</p>
+        <button onclick="showMore('service-details-8')">Read More</button>
+        <div id="service-details-8" class="service-details" style="display: none;">
+            <ul>
+                <li>24/7 Ambulance Service</li>
+                <li>Advanced Medical Equipment</li>
+                <li>Qualified Paramedics</li>
+            </ul>
+            <button onclick="hideDetails('service-details-8')">Show Less</button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="box">
+    In Patient Services
+  </div>
+</div>
+
+<div class="inpatient-container">
+    <div class="inpatient-card">
+        <img src="adult-wards.jpg" alt="Adult Wards" class="service-img">
+        <h2>Adult Wards</h2>
+        <p class="short-description">Comfortable, well-equipped wards for adult patients.</p>
+        <div class="full-description" style="display:none;">
+            <p>Adult wards are designed with comfort and care in mind. Our wards are equipped with the latest medical technology, ensuring top-quality healthcare for our adult patients.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+    </div>
+    <div class="inpatient-card">
+        <img src="maternity.jpg" alt="Maternity" class="service-img">
+        <h2>Maternity</h2>
+        <p class="short-description">Comprehensive care for mothers and newborns.</p>
+        <div class="full-description" style="display:none;">
+            <p>Our maternity ward offers state-of-the-art care for mothers and their newborns. Our experienced team of professionals ensures the best experience during labor and delivery.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+    </div>
+    <div class="inpatient-card">
+        <img src="pediatrics.jpg" alt="Pediatrics" class="service-img">
+        <h2>Pediatrics</h2>
+        <p class="short-description">Specialized care for children and young patients.</p>
+        <div class="full-description" style="display:none;">
+            <p>Our pediatric care is focused on providing personalized care for children. We have child-friendly facilities and a compassionate team to ensure the best care for your child.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+    </div>
+    <div class="inpatient-card">
+        <img src="operating-theatres.jpg" alt="Operating Theatres" class="service-img">
+        <h2>Operating Theatres</h2>
+        <p class="short-description">State-of-the-art facilities for all types of surgery.</p>
+        <div class="full-description" style="display:none;">
+            <p>Our operating theatres are equipped with the latest surgical technologies, ensuring safe and efficient surgeries performed by highly trained surgeons.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+    </div>
+</div>
+
+<div class="container">
+  <div class="box">
+    Specialized clinics 
+  </div>
+</div>
+
+<div class="specialized-container">
+    <div class="specialized-card">
+        <img src="antenatal-clinic.jpg" alt="Antenatal Clinic" class="service-img">
+        <h2>Antenatal Clinic</h2>
+        <p class="short-description">Care and support for expectant mothers before delivery.</p>
+        <div class="full-description" style="display:none;">
+            <p>Our antenatal clinic offers routine checkups, ultrasounds, and expert advice to ensure the health of both the mother and the baby during pregnancy.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+    </div>
+    <div class="specialized-card">
+        <img src="pre-natal-clinic.jpg" alt="Pre-Natal & Post-Natal Clinics" class="service-img">
+        <h2>Pre-Natal & Post-Natal Clinics</h2>
+        <p class="short-description">Comprehensive care before and after childbirth.</p>
+        <div class="full-description" style="display:none;">
+            <p>Our pre-natal and post-natal clinics provide expert guidance and support during pregnancy and after delivery, ensuring a smooth recovery and well-being.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+    </div>
+    <div class="specialized-card">
+        <img src="family-planning.jpg" alt="Family Planning" class="service-img">
+        <h2>Family Planning</h2>
+        <p class="short-description">Expert advice on family planning methods and reproductive health.</p>
+        <div class="full-description" style="display:none;">
+            <p>Our family planning clinic offers a variety of methods, including contraceptives, counseling, and education on reproductive health.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+    </div>
+    <div class="specialized-card">
+        <img src="gynecology.jpg" alt="Gynecology" class="service-img">
+        <h2>Gynecology</h2>
+        <p class="short-description">Care for female reproductive health.</p>
+        <div class="full-description" style="display:none;">
+            <p>Our gynecology clinic provides routine examinations, treatment for reproductive health issues, and specialized care for women at every stage of life.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+    </div>
+    <div class="specialized-card">
+        <img src="ear-throat-nose.jpg" alt="Ear, Throat & Nose" class="service-img">
+        <h2>Ear, Throat & Nose</h2>
+        <p class="short-description">Expert care for ear, throat, and nose conditions.</p>
+        <div class="full-description" style="display:none;">
+            <p>Our ENT clinic offers treatment for hearing problems, ear infections, throat conditions, and sinus issues with advanced diagnostic tools and therapies.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+    </div>
+    <div class="specialized-card">
+        <img src="colonoscopy.jpg" alt="Colonoscopy" class="service-img">
+        <h2>Colonoscopy</h2>
+        <p class="short-description">Screening for colon health and early detection of diseases.</p>
+        <div class="full-description" style="display:none;">
+            <p>Our colonoscopy service offers early detection of colorectal diseases and conditions through a simple and safe procedure.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+    </div>
+    <div class="specialized-card">
+        <img src="endoscopy.jpg" alt="Endoscopy" class="service-img">
+        <h2>Endoscopy</h2>
+        <p class="short-description">Advanced diagnostic procedure for the digestive system.</p>
+        <div class="full-description" style="display:none;">
+            <p>Endoscopy allows our specialists to visually examine the digestive tract, identify problems, and conduct necessary treatments with minimal discomfort.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+    </div>
+    <div class="specialized-card">
+        <img src="physician.jpg" alt="Physician" class="service-img">
+        <h2>Physician</h2>
+        <p class="short-description">General medical consultations and healthcare services.</p>
+        <div class="full-description" style="display:none;">
+            <p>Our physicians offer consultations for a wide range of medical concerns, diagnosing, treating, and managing both acute and chronic conditions.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+    </div>
+    <div class="specialized-card">
+        <img src="psychologist.jpg" alt="Psychologist" class="service-img">
+        <h2>Psychologist</h2>
+        <p class="short-description">Therapeutic support for mental health and emotional well-being.</p>
+        <div class="full-description" style="display:none;">
+            <p>Our psychologists provide individual and group therapy for mental health support, addressing anxiety, depression, trauma, and more.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+    </div>
+    <div class="specialized-card">
+        <img src="orthopedic.jpg" alt="Orthopedic" class="service-img">
+        <h2>Orthopedic</h2>
+        <p class="short-description">Specialized care for bone, joint, and muscle conditions.</p>
+        <div class="full-description" style="display:none;">
+            <p>Our orthopedic clinic offers diagnosis and treatment for bone and joint conditions, including arthritis, fractures, and sports injuries.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+    </div>
+    <div class="specialized-card">
+        <img src="occupational-therapy.jpg" alt="Occupational Therapy" class="service-img">
+        <h2>Occupational Therapy</h2>
+        <p class="short-description">Helping patients regain their ability to perform everyday tasks.</p>
+        <div class="full-description" style="display:none;">
+            <p>Occupational therapy focuses on improving the quality of life for patients recovering from injury, illness, or disability, helping them regain independence.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+    </div>
+    <div class="specialized-card">
+        <img src="dermatologist.jpg" alt="Dermatologist" class="service-img">
+        <h2>Dermatologist</h2>
+        <p class="short-description">Expert care for skin conditions and beauty treatments.</p>
+        <div class="full-description" style="display:none;">
+            <p>Our dermatology clinic offers treatments for various skin conditions, including acne, eczema, and skin cancer screening.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+    </div>
+    <div class="specialized-card">
+        <img src="surgeon-review.jpg" alt="Surgeon Review" class="service-img">
+        <h2>Surgeon Review</h2>
+        <p class="short-description">Consultations for surgical options and procedures.</p>
+        <div class="full-description" style="display:none;">
+            <p>Our surgeon review clinic helps patients understand their surgical options, whether for elective or emergency procedures, with a focus on informed choices.</p>
+        </div>
+        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+    </div>
+</div>
+
+    <!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <p>&copy; 2025 MercyLife Hospital Limited. All rights reserved.</p>
+      <p> @ Eclipse </p>
+    </div>
+
+ 
+
+
+    <div class="footer-right">
+      <p><strong>Contact Us:</strong></p>
+      <p>Email: <a href="mailto:mercylitereception@gmail.com">info@mercylitereception@gmail.com</a></p>
+      <p>Phone:0708764052 /0723008007</p>
+      <p>Emergency:0711162999</p>
+    </div>
+  </div>
+</footer>
+   <script src="path/to/your/script.js"></script>
+</body>
+</html>
