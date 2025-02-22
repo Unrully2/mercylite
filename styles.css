@@ -928,3 +928,110 @@ ul li {
     }
 
 
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: #14e326; /* Green color as requested */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Logo and Hospital Name */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px; /* Adjust the size of the logo */
+    margin-right: 15px; /* Space between logo and name */
+}
+
+.hospital-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Navigation Menu Styling */
+.main-nav {
+    margin-bottom: 15px;
+}
+
+.main-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu li {
+    margin: 0 15px;
+}
+
+.main-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.main-menu li a:hover {
+    background-color: #117a1f;
+    border-radius: 5px;
+}
+
+/* Search Bar Styling */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#search-bar {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#search-button {
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: #117a1f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #0e5e18;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-menu {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .main-menu li {
+        margin: 5px 0;
+    }
+
+    #search-bar {
+        width: 200px;
+    }
+}
