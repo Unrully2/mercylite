@@ -36,28 +36,7 @@
       <input type="text" id="search-bar" placeholder="Search..." />
       <button type="button" id="search-button">Search</button>
     </div>
-      <div id="results">
-    <div>Mercylife Training College</div>
-    <div>Mercylite Hospital</div>
-    <div>Certified Nursing Assistant Course</div>
-    <div>Electronic Health Records Training</div>
-    <div>Geriatric Care Lessons</div>
-</div>
-
-<script>
-function searchFunction() {
-    let input = document.getElementById('searchBox').value.toLowerCase();
-    let items = document.querySelectorAll('#results div');
-
-    items.forEach(function(item) {
-        if (item.innerHTML.toLowerCase().includes(input)) {
-            item.style.display = "block";
-        } else {
-            item.style.display = "none";
-        }
-    });
-}
-</script>
+     
   </header>
 
 <head>
@@ -419,5 +398,6 @@ function searchFunction() {
    <script src="path/to/your/script.js"></script>
 </body>
 </html>
+
 
 
